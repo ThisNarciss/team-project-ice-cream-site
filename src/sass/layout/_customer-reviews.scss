@@ -20,9 +20,9 @@
 
   text-align: center;
 
-  color: #fcfcfc;
+  color: var(--main-text-color);
 
-  background-color: #84a178;
+  background-color: var(--main-green-color);
   border-radius: 10px;
   @media screen and (min-width: 480px) {
     min-height: 160px;
