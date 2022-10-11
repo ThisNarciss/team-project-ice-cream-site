@@ -86,8 +86,8 @@
 
     cursor: pointer;
 
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
 
     border: none;
     background-color: var(--main-text-color);
@@ -108,8 +108,7 @@
 
 .franchise__title {
     font-family: var(--font-seymour-one);
-    font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
 
@@ -212,6 +211,8 @@
 .submit-btn {
     margin-top: 24px;
     margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
 
     transition: var(--animation);
 
