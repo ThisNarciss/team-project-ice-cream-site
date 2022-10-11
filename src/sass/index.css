@@ -411,6 +411,10 @@ img {
   padding-bottom: 40px;
 }
 
+.footer__page {
+  width: 235px;
+}
+
 .footer__contact-phone {
   font-family: var(--font-montserrat);
   font-weight: 700;
