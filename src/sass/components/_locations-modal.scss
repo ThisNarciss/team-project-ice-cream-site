@@ -51,7 +51,7 @@
 // }
 
 .location-modal {
-  width: 100%;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
+  height: 365px;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: opacity var(--animation), visibility var(--animation);
@@ -72,6 +72,7 @@
 
   @media screen and (min-width: 480px) {
     width: 568px;
+    height: 458px;
   }
 }
 .location-modal.is-hidden {
