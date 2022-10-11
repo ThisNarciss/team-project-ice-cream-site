@@ -59,15 +59,13 @@
       <li class="page-header-btn__item page-header-btn__mobile-menu">
         <button type="button" class="open-mobile-menu-btn js-open-menu">
           <svg class="open-mobile-menu-btn__icon">
-            <use href="#"></use>
+            <use href="./images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
       </li>
       <li class="page-header-btn__item">
         <div class="page-header-btn-box__buy">
-          <button type="button" class="page-header-btn__buy button">
-            Buy now
-          </button>
+          <button type="button" class="btn">Buy now</button>
           <svg class="page-header-btn__buy-icon" width="24" height="24">
             <use href="#"></use>
           </svg>
@@ -147,9 +145,7 @@
     <ul class="page-hero-box__list list">
       <li class="page-hero-box__item">
         <a class="page-hero-box__link link" href="./partials/products.html">
-          <button type="button" class="page-hero-box__link-btn">
-            Products
-          </button>
+          <button type="button" class="btn button">Products</button>
         </a>
       </li>
       <li class="page-hero-box__item">
@@ -171,8 +167,8 @@
       <p class="page-hero__text-info">food trucks</p>
     </li>
   </ul>
-  <div class="many-ice-cream-box">
-    <picture class="many-ice-cream-box__img">
+  <div class="many-ice-cream">
+    <picture class="many-ice-cream__img">
       <source
         srcset="
           ./images/desktop/desk-hero-many_ice_cream-1x.png 1x,
@@ -192,12 +188,12 @@
         alt="ice cream"
       />
     </picture>
-    <p class="many-ice-cream-box__text">
+    <p class="many-ice-cream__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
   </div>
-  <picture class="hero-header-img__points">
+  <picture class="points">
     <source
       srcset="
         ./images/desktop/desk-hero-points-1x.png 1x,
@@ -224,33 +220,93 @@
 
     <img src="./images/mobile/mob-hero-points-1x.png" alt="ice cream" />
   </picture>
-  <div class="ice-cream-box">
-    <picture class="hero-header-img__ice-cream">
-      <source
-        srcset="
-          ./images/desktop/desk-hero-ice_cream-1x.png 1x,
-          ./images/desktop/desk-hero-ice_cream-1x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
+  <div class="ice-cream">
+    <div class="ice-cream__box-shadow"></div>
+    <div class="ice-cream__box-img">
+      <picture class="ice-cream__img">
+        <source
+          srcset="
+            ./images/desktop/desk-hero-ice_cream-1x.png 1x,
+            ./images/desktop/desk-hero-ice_cream-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
 
-      <source
-        srcset="
-          ./images/tablet/desk-hero-ice_cream-1x.png 1x,
-          ./images/tablet/desk-hero-ice_cream-1x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
+        <source
+          srcset="
+            ./images/tablet/tablet-hero-ice_cream-1x.png 1x,
+            ./images/tablet/tablet-hero-ice_cream-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-      <source
-        srcset="
-          ./images/mobile/desk-hero-ice_cream-1x.png 1x,
-          ./images/mobile/desk-hero-ice_cream-1x.png 2x
-        "
-        media="(max-width: 767px)"
-      />
+        <source
+          srcset="
+            ./images/mobile/mob-hero-ice_cream-1x.png 1x,
+            ./images/mobile/mob-hero-ice_cream-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
 
-      <img src="./images/desktop/desk-hero-ice_cream-1x.png" alt="ice cream" />
-    </picture>
+        <img src="./images/mobile/mob-hero-ice_cream-1x.png" alt="ice cream" />
+      </picture>
+      <picture class="ice-cream__img-smile-one">
+        <source
+          srcset="
+            ./images/tablet/tablet-hero-smile1-1x.png 1x,
+            ./images/tablet/tablet-hero-smile1-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/mobile/mob-hero-smile1-1x.png 1x,
+            ./images/mobile/mob-hero-smile1-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/mobile/mob-hero-smile1-1x.png" alt="smile" />
+      </picture>
+      <picture class="ice-cream__img-smile-two">
+        <source
+          srcset="
+            ./images/tablet/tablet-hero-smile2-1x.png 1x,
+            ./images/tablet/tablet-hero-smile2-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/mobile/mob-hero-smile2-1x.png 1x,
+            ./images/mobile/mob-hero-smile2-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/mobile/mob-hero-smile2-1x.png" alt="smile" />
+      </picture>
+      <picture class="ice-cream__img-smile-three">
+        <source
+          srcset="
+            ./images/tablet/tablet-hero-smile3-1x.png 1x,
+            ./images/tablet/tablet-hero-smile3-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/mobile/mob-hero-smile3-1x.png 1x,
+            ./images/mobile/mob-hero-smile3-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/mobile/mob-hero-smile3-1x.png" alt="smile" />
+      </picture>
+    </div>
   </div>
 </div>
