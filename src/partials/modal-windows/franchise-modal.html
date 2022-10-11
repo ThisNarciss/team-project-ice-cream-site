@@ -18,62 +18,57 @@
     <form class="franchise__form">
       <div class="franchise-container">
         <div class="input-container">
-          <label class="modal-label" for="name">
+          <label class="modal-label">
             <input
               class="modal-input"
               type="text"
-              name="user-name"
-              id="name"
+              name="user_name"
               placeholder="Name"
               required
-              pattern="[A-Za-z]"
+              pattern="[a-z]{1,15}"
             />
           </label>
         </div>
 
         <div class="input-container">
-          <label class="modal-label" for="tel">
+          <label class="modal-label">
             <input
               class="modal-input"
               type="tel"
-              name="telephone"
-              id="tel"
+              name="user_phone"
               placeholder="Phone"
               required
-              pattern="\+1\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+              pattern="[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
             />
           </label>
         </div>
 
         <div class="input-container">
-          <label class="modal-label" for="mail">
+          <label class="modal-label">
             <input
               class="modal-input"
               type="email"
               name="mail"
-              id="mail"
               placeholder="Email"
               required
-              pattern="[A-Za-z]"
             />
           </label>
         </div>
 
         <div class="input-container">
-          <label class="modal-label" for="comment">
+          <label class="modal-label">
             <textarea
               class="modal-input comment"
               name="comment"
-              id="comment"
               rows="5"
               cols="23"
               placeholder="Comment"
-              pattern="[A-Za-z]"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             ></textarea>
           </label>
         </div>
       </div>
+      <button class="submit-btn" type="submit">Submit</button>
     </form>
-    <button class="submit-btn" type="submit">Submit</button>
   </div>
 </div>

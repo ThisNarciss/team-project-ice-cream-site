@@ -99,8 +99,8 @@
 
   cursor: pointer;
 
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
 
   border: none;
   background-color: var(--main-text-color);
@@ -178,6 +178,8 @@
   border-radius: 10px;
 
   text-align: center;
+  
+  
 }
 
 .modal-label {
@@ -225,6 +227,8 @@
 .submit-btn {
   margin-top: 24px;
   margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
 
   transition: var(--animation);
 
