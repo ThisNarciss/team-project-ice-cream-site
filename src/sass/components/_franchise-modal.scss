@@ -63,9 +63,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity var(--animation), visibility var(--animation);
 
   background-color: var(--main-text-color);
 
