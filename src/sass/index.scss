@@ -4,12 +4,14 @@
 
 @import './base/common';
 @import './base/container';
+@import './base/section';
 
 // FOR COMPONENTS
 @import './components/button';
 @import './components/background';
 @import './components/slick';
 @import './components/button-up';
+@import './components/mobile-menu';
 
 // FOR MODAL WINDOWS
 @import './components/buy-now-modal';
