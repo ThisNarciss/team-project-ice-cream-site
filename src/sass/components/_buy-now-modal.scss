@@ -8,13 +8,13 @@
   left: 50%;
   transform: translate(-50%);
   height: 986px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--backdrop-bgc);
   z-index: 9999;
   transition: opacity var(--animation), visibility var(--animation);
 
-  background-color: #fcfcfc;
+  background-color: var(--main-text-color);
 
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--yellow-default-color);
   border-radius: 10px;
 
   @media screen and (min-width: 480px) {
@@ -156,7 +156,7 @@
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
-    #d9d9d9;
+    var(--light-grey-color);
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
@@ -166,7 +166,7 @@
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
-    #d9d9d9;
+    var(--light-grey-color);
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
@@ -176,7 +176,7 @@
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)
     ),
-    #d9d9d9;
+    var(--light-grey-color);
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
@@ -188,7 +188,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #131313;
+  color: var(--black-text-color);
 }
 
 .modal-buy_form {

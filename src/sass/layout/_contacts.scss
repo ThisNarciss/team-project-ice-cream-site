@@ -5,7 +5,7 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-  padding-top: 265px;
+    padding-top: 265px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -212,64 +212,10 @@
     margin-bottom: 120px;
   }
 }
-.section-contacts__btn-location-modal {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black-text-color);
-  background: var(--yellow-default);
-  border-radius: 10px;
-  border-color: transparent;
-  width: 196px;
-  height: 42px;
-
-  transition: background var(--animation), color var(--animation);
-
-  &:hover {
-    background: var(--green-accent-color);
-  }
-  &:focus {
-    background: var(--green-accent-color);
-    color: var(--main-text-color);
-  }
-  &:disabled {
-    background: var(--grey-disabled-color);
-  }
-}
 .section-contacts__btn-logo {
   width: 12px;
   height: 12px;
   margin-left: 10px;
   fill: currentColor;
   transition: fill var(--animation);
-}
-.section-contacts__btn-franchise-modal {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black-text-color);
-  border: 2px solid var(--yellow-default-color);
-  border-radius: 10px;
-  background: transparent;
-  width: 196px;
-  height: 42px;
-
-  transition: border var(--animation), color var(--animation);
-
-  &:hover {
-    border-color: var(--green-accent-color);
-  }
-  &:focus {
-    border-color: var(--green-accent-color);
-    color: var(--main-text-color);
-  }
-  &:disabled {
-    border-color: var(--grey-disabled-color);
-  }
 }

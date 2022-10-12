@@ -18,7 +18,7 @@
   margin-bottom: 32px;
   border-radius: 44px;
 
-  background-color: #6e6e6e;
+  background-color: var(--customer-reviews-bgc);
 }
 .customer-reviews__text {
   margin-bottom: 30px;
@@ -86,7 +86,7 @@
 
   text-align: center;
 
-  color: #131313;
+  color: var(--black-text-color);
 
   margin-bottom: 14px;
 
