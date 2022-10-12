@@ -32,13 +32,14 @@
   @media screen and (min-width: 1200px) {
     width: 368px;
   }
-}
-.section-contacts__element:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 16px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 16px;
+    }
   }
 }
 
@@ -105,25 +106,27 @@
   }
 
   transition: text-decoration var(--animation);
-}
-.section-contacts__address:hover,
-.section-contacts__address:focus {
-  text-decoration: underline;
-  cursor: url('../images/cursor.png');
-}
-.section-contacts__address::after {
-  content: '';
-  height: 0;
-  border: 1px solid var(--border-color);
-  margin-top: 24px;
-  margin-bottom: 24px;
-  display: flex;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 26px;
-    margin-bottom: 32px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: url(../images/cursor.png), pointer;
+  }
+  &::after {
+    content: '';
+    height: 0;
+    border: 1px solid var(--border-color);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 26px;
+      margin-bottom: 32px;
+    }
   }
 }
+
 .section-contacts__schedule-element_border::after {
   content: '';
   height: 0;
@@ -208,17 +211,19 @@
   height: 42px;
 
   transition: background var(--animation), color var(--animation);
+
+  &:hover {
+    background: var(--green-accent-color);
+  }
+  &:focus {
+    background: var(--green-accent-color);
+    color: var(--main-text-color);
+  }
+  &:disabled {
+    background: var(--grey-disabled-color);
+  }
 }
-.section-contacts__btn-location-modal:hover {
-  background: var(--green-accent-color);
-}
-.section-contacts__btn-location-modal:focus {
-  background: var(--green-accent-color);
-  color: var(--main-text-color);
-}
-.section-contacts__btn-location-modal:disabled {
-  background: var(--grey-disabled-color);
-}
+
 .section-contacts__btn-logo {
   width: 12px;
   height: 12px;
@@ -241,14 +246,15 @@
   height: 42px;
 
   transition: border var(--animation), color var(--animation);
-}
-.section-contacts__btn-franchise-modal:hover {
-  border-color: var(--green-accent-color);
-}
-.section-contacts__btn-franchise-modal:focus {
-  border-color: var(--green-accent-color);
-  color: var(--main-text-color);
-}
-.section-contacts__btn-franchise-modal:disabled {
-  border-color: var(--grey-disabled-color);
+
+  &:hover {
+    border-color: var(--green-accent-color);
+  }
+  &:focus {
+    border-color: var(--green-accent-color);
+    color: var(--main-text-color);
+  }
+  &:disabled {
+    border-color: var(--grey-disabled-color);
+  }
 }
