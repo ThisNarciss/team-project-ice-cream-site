@@ -106,6 +106,7 @@
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .modal-buy_item-ice {
   border: 2px solid #96af8c;
@@ -120,9 +121,6 @@
   transition: background-color var(--animation);
 }
 
-// .modal-buy_checkbox-input {
-//     appearance: none;
-// }
 .modal-buy_checkbox-input:checked + .modal-buy_item-ice {
   background-color: #96af8c;
 }
