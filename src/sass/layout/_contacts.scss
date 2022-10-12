@@ -1,5 +1,16 @@
 .section-contacts {
   background: var(--main-green-color);
+  padding-top: 902px;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+  padding-top: 265px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 466px;
+  }
 }
 .section-contacts__header {
   font-family: var(--font-seymour-one);
@@ -10,7 +21,7 @@
   color: var(--black-text-color);
 }
 .section-contacts__list {
-  position: relative;
+  position: absolute;
   top: -350px;
 
   @media screen and (min-width: 768px) {
@@ -188,19 +199,16 @@
   align-items: center;
 }
 .section-contacts__buttons-list {
-  margin-top: 32px;
   margin-bottom: 39px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 60px;
     flex-direction: row;
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 64px;
     margin-bottom: 120px;
   }
 }
