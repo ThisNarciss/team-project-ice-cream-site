@@ -62,6 +62,7 @@
   &:hover,
   &:focus {
     color: var(--yellow-default-color);
+    cursor: url(../images/cursor.png), pointer;
   }
 }
 .btn-mobile-menu {
