@@ -319,8 +319,6 @@
   justify-content: center;
   width: 196px;
   height: 42px;
-  align-items: center;
-  margin: 0 auto;
   background-color: transparent;
   border-color: transparent;
   position: absolute;
@@ -335,29 +333,18 @@
   }
 }
 
-.btn-choise::before {
-  content: '';
+.products__btn-icon {
   width: 40px;
-  height: 10px;
-  background-size: contain;
-  background-image: url(../images/mobile/products-arrow-1-1x.png);
-  background-repeat: no-repeat;
-  margin-left: 15px;
-  transition: var(--animation);
+  height: 32px;
 }
 
-.btn-choise:hover::before {
-  width: 50px;
-  height: 15px;
-  background-image: url(../images/mobile/products-arrow-2-1x.png);
-  background-repeat: no-repeat;
-  transition: var(--animation);
+.products__btn-icon:hover {
+  transform: scaleX(1.25);
+  transition: transform var(--animation);
 }
 
-.btn-choise:focus::before {
-  width: 50px;
-  height: 15px;
-  background-image: url(../images/mobile/products-arrow-3-1x.png);
-  background-repeat: no-repeat;
-  transition: var(--animation);
+.btn-choise:focus {
+  transform: scale(1.25);
+  transition: transform var(--animation);
+  border: transpa rent;
 }
