@@ -109,7 +109,7 @@
 .section-contacts__address:hover,
 .section-contacts__address:focus {
   text-decoration: underline;
-  cursor: url('../images/cursor.png');
+  cursor: url(../images/cursor.png), pointer;
 }
 .section-contacts__address::after {
   content: '';
