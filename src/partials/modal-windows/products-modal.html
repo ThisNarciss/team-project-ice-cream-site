@@ -5,7 +5,6 @@
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- <form class=""> -->
     <p class="modal-headline">Chololate icecream</p>
     <div>
       <picture class="modal-window-picture">
@@ -54,7 +53,6 @@
     <h2 class="modal-title">Ingredients</h2>
     <ul class="ingredients-list">
       <li class="ingerdient-content">
-        <!-- (&nbsp;) -->
         <p class="ingerdient-name">Milk</p>
         <p class="ingerdient-amount">100ml</p>
       </li>
@@ -80,23 +78,13 @@
       </li>
     </ul>
 
-    <!-- <lable class="" 
-   <span class="">name</span> 
-    <span class="">
-      <input 
-        type="text" 
-        name="user-name" 
-        class="" 
-        required pattern="^[a-zA-Zа-яА-Я]+" 
-        minlength="2"> 
-    </span>
-  </lable> -->
+   
     <form class="franchise__form">
       <div class="franchise-container">
         <div class="input-container">
           <label class="modal-label">
             <input
-              class="modal-input"
+              class="modal-input-form"
               type="text"
               name="user_name"
               placeholder="Name"
@@ -109,12 +97,13 @@
         <div class="input-container">
           <label class="modal-label">
             <input
-              class="modal-input"
+              class="modal-input-form"
               type="tel"
               name="user_phone"
               placeholder="Phone"
               required
               pattern="[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+              title="[xx-x-xxx-xxx-xxx]"
             />
           </label>
         </div>
@@ -122,7 +111,7 @@
         <div class="input-container">
           <label class="modal-label">
             <textarea
-              class="modal-input comment"
+              class="modal-input-comment"
               name="comment"
               rows="5"
               cols="23"
@@ -134,7 +123,5 @@
       </div>
       <button class="modal-form-submit-btn" type="submit">Submit</button>
     </form>
-
-    <!-- </form> -->
   </div>
 </div>
