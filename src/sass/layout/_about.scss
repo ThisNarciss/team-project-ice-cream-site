@@ -14,10 +14,11 @@
   line-height: 1.2857;
 
   display: flex;
+  align-items: center;
   text-align: center;
   color: var(--black-text-color);
 
-  transition: background-color 500ms linear, color 500ms linear;
+  transition: background-color var(--animation), color var(--animation);
 
   &:hover {
     background-color: var(--green-accent-color);
@@ -36,6 +37,7 @@
 .btn_svg {
   width: 12px;
   height: 12px;
+  margin-left: 4px;
 }
 
 .btn_icon {
