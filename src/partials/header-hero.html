@@ -294,7 +294,7 @@
           <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
       </button>
-      <button class="btn btn_buy header__btn" type="button">
+      <button class="btn btn_buy header__btn" type="button" buynow-modal-open>
         Buy now
         <svg class=".btn-svg" width="12" height="12">
           <use href="./images/sprite.svg#icon-btn-arrow"></use>
@@ -369,55 +369,46 @@
       alt="ice cream with smile"
     />
   </div>
-  
 </div>
 <div class="menu-container js-menu-container" id="mobile-menu">
   <a class="logo mobile__logo" href="./index.html"
-        ><img
-          srcset="
-            ./images/desktop/header-desktop-logo@1x.png  60w,
-            ./images/desktop/header-desktop-logo@2x.png 120w,
-            ./images/tablet/header-tablet-logo@1x.png    48w,
-            ./images/tablet/header-tablet-logo@2x.png    96w,
-            ./images/mobile/header-mobile-logo@1x.png    40w,
-            ./images/mobile/header-mobile-logo@2x.png    80w
-          "
-          src="./images/mobile/header-mobile-logo@1x.png"
-          alt="logo-ice-cream"
-          sizes="(max-width: 767px) 40px, (max-width: 1199px) 48px, 60px"
-      /></a>
-          <button class="menu-toggle js-close-menu">
-            <svg width="40" height="40">
-              <use href="./images/sprite.svg#icon-ep_close"></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu">
-            <li class="mobile-menu__item">
-              <a
-                href="#"
-                class="mobile-menu__link mobile-menu__link--current"
-                >Home</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">How it’s made?</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Our products</a>
-            </li>
-            
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link"
-                >Contact
-              </a>
-            </li>
-            
-          </ul>
-          <button class="btn btn_buy mobile-btn" type="button">
-        Buy now
-        <svg class=".btn-svg" width="12" height="12">
-          <use href="./images/sprite.svg#icon-btn-arrow"></use>
-        </svg>
-          
-          
-        </div>
+    ><img
+      srcset="
+        ./images/desktop/header-desktop-logo@1x.png  60w,
+        ./images/desktop/header-desktop-logo@2x.png 120w,
+        ./images/tablet/header-tablet-logo@1x.png    48w,
+        ./images/tablet/header-tablet-logo@2x.png    96w,
+        ./images/mobile/header-mobile-logo@1x.png    40w,
+        ./images/mobile/header-mobile-logo@2x.png    80w
+      "
+      src="./images/mobile/header-mobile-logo@1x.png"
+      alt="logo-ice-cream"
+      sizes="(max-width: 767px) 40px, (max-width: 1199px) 48px, 60px"
+  /></a>
+  <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40">
+      <use href="./images/sprite.svg#icon-ep_close"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link mobile-menu__link--current">Home</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">Our products</a>
+    </li>
+
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">Contact </a>
+    </li>
+  </ul>
+  <button class="btn btn_buy mobile-btn" type="button" buynowmob-modal-open>
+    Buy now
+    <svg class=".btn-svg" width="12" height="12">
+      <use href="./images/sprite.svg#icon-btn-arrow"></use>
+    </svg>
+  </button>
+</div>
