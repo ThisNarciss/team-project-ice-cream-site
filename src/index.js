@@ -1,5 +1,6 @@
 import './js/anchor-scroll';
 import './js/simple-light-box';
+import './js/slick-slider-gallery';
 import './js/slick-slider';
 import './js/mobile-menu';
 
