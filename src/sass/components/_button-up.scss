@@ -7,11 +7,11 @@
 }
 .button-up__link {
   fill: currentColor;
-  color: gray;
+  color: var(--yellow-default-color);
 
   transition: color 250ms linear;
   &:hover,
   &:focus {
-    color: black;
+    color: var(--green-accent-color);
   }
 }
