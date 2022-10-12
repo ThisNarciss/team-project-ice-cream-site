@@ -64,10 +64,9 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 10px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
-  height: 668px;
+  transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: opacity var(--animation), visibility var(--animation);
@@ -80,6 +79,9 @@
   @media screen and (min-width: 480px) {
     width: 568px;
     height: 668px;
+  }
+  @media screen and (max-width: 767px) {
+    overflow: scroll;
   }
 }
 
@@ -282,7 +284,6 @@
   z-index: 10;
   opacity: 1;
   transition: opacity var(--animation), visibility var(--animation);
-  overflow: scroll;
 }
 
 .is-hidden {
