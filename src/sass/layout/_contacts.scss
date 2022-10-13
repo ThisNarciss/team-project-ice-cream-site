@@ -1,16 +1,16 @@
 .section-contacts {
   background: var(--main-green-color);
-  padding-top: 902px;
+  // padding-top: 902px;
 
-  position: relative;
+  // position: relative;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 265px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 265px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 466px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 466px;
+  // }
 }
 .section-contacts__header {
   font-family: var(--font-seymour-one);
@@ -21,7 +21,7 @@
   color: var(--black-text-color);
 }
 .section-contacts__list {
-  position: absolute;
+  position: relative;
   top: -350px;
 
   @media screen and (min-width: 768px) {
@@ -197,8 +197,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -320px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -240px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -30px;
+  }
 }
 .section-contacts__buttons-list {
+  position: relative;
   margin-bottom: 39px;
   display: flex;
   flex-direction: column;
