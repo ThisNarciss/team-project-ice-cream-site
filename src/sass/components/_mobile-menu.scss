@@ -40,6 +40,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
@@ -62,29 +63,6 @@
   align-items: center;
 }
 
-.mobile-social-web__item {
-  position: relative;
-
-  &:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    display: block;
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
-  }
-}
-
-.mobile-social-web__link {
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
 .menu-toggle {
   fill: currentColor;
   color: var(--main-text-color);
@@ -92,6 +70,7 @@
   position: absolute;
   top: 16px;
   right: 20px;
+  transition: color var(--animation);
   &:hover,
   &:focus {
     color: var(--black-text-color);
