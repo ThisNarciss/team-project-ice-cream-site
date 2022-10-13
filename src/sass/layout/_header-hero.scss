@@ -217,6 +217,7 @@
   position: absolute;
   bottom: 0;
   right: 81px;
+
   @media screen and (max-width: 767px) {
     width: 157px;
     height: 208px;
@@ -236,24 +237,17 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  // @media screen and (max-width: 767px) {
-  //   width: 100%;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   right: 95px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   right: 100px;
-  // }
+
+  filter: drop-shadow(-0px 0px 30px var(--white-color));
+
+  @media screen and (min-width: 768px) {
+    filter: drop-shadow(-0px 0px 40px var(--white-color));
+  }
+  @media screen and (min-width: 1200px) {
+    filter: drop-shadow(-0px 0px 50px var(--white-color));
+  }
 }
-// .points-img {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   @media screen and (max-width: 769px) {
-//     width: 100%;
-//   }
-// }
+
 .ice-cream-smile {
   position: absolute;
   top: 0;
