@@ -29,7 +29,24 @@
   margin-bottom: 38px;
 }
 .footer__icon {
-  fill: var(--yellow-default-color);
+  transition: transform var(--animation);
+  // fill: var(--yellow-default-color);
+}
+.footer__contact-link {
+  fill: currentColor;
+  color: var(--main-green-color);
+
+  transition: color var(--animation);
+  &:hover {
+    color: var(--white-color);
+  }
+  &:focus {
+    transform: scale(1.5);
+    color: var(--white-color);
+  }
+  &:focus .footer__icon {
+    transform: scale(1.1);
+  }
 }
 .footer__contact-box {
   text-align: right;
