@@ -45,6 +45,12 @@
 
   border: none;
   background-color: var(--main-text-color);
+  fill: currentColor;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--yellow-default-color);
+  }
 }
 
 .location-close-icon {

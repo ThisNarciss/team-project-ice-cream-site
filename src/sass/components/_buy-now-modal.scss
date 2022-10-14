@@ -3,13 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 50%;
   transform: translate(-50%);
   height: 986px;
   background: var(--backdrop-bgc);
   z-index: 9999;
+  overflow: auto;
   transition: opacity var(--animation), visibility var(--animation);
 
   background-color: var(--main-text-color);
@@ -21,10 +22,11 @@
     width: 100%;
     max-width: 568px;
     height: 644px;
-    top: 50px;
   }
   @media screen and (min-width: 768px) {
     width: 568px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -40,12 +42,13 @@
 
   width: 16px;
   height: 16px;
+  fill: currentColor;
 
   border: none;
   background-color: var(--main-text-color);
-
+  transition: color var(--animation);
   &:hover,
-  :focus {
+  &:focus {
     color: var(--yellow-default-color);
   }
 }
@@ -61,11 +64,6 @@
 
   width: 16px;
   height: 16px;
-  color: currentColor;
-}
-
-.modal-buy-close-svg {
-  fill: currentColor;
 }
 
 .modal-buy_title {
