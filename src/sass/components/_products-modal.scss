@@ -109,7 +109,7 @@
     border-radius: 10px;
     resize: none;
   }
-  .ingerdient-amount {
+  .ingredient-amount {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -157,7 +157,7 @@
   .comment-field {
     width: 368px;
   }
-  .ingerdient-amount {
+  .ingredient-amount {
     margin-right: 40px;
   }
   .modal-input-form {
@@ -217,11 +217,11 @@
   margin-left: 20px;
   margin-bottom: 48px;
 }
-.ingerdient-content {
+.ingredient-content {
   display: flex;
   justify-content: space-between;
 }
-.ingerdient-name {
+.ingredient-name {
   display: flex;
   margin: 0;
   flex-direction: column;
@@ -238,6 +238,16 @@
   font-size: 14px;
   line-height: 1.4;
   color: var(--black-text-color);
+}
+.modal-input-form:placeholder-shown {
+  border: 1px solid var(--main-green-color);
+}
+.modal-input-form:valid:not(:placeholder-shown) {
+  border-color: var(--green-accent-color);
+}
+
+.modal-input-form:invalid:not(:placeholder-shown) {
+  border-color: var(--red-color);
 }
 .modal-input-comment::placeholder {
   font-weight: 400;
