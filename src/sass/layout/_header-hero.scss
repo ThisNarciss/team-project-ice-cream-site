@@ -1,9 +1,26 @@
+@keyframes infiniteIce {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes transitionIce {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header-hero__container {
+  overflow: hidden;
   position: relative;
   padding-bottom: 240px;
   padding-top: 12px;
@@ -212,6 +229,7 @@
   text-align: right;
 }
 .img-ice-cream-box {
+  animation: transitionIce 2000ms linear;
   position: absolute;
   bottom: 0;
   right: 81px;
@@ -262,4 +280,8 @@
   //   top: 20%;
   //   right: 100px;
   // }
+}
+
+.ice-table-img {
+  animation: infiniteIce 2500ms linear infinite;
 }
