@@ -8,9 +8,9 @@
   padding-bottom: 240px;
   padding-top: 12px;
   background-image: url('../images/mobile/header-mobile-points.svg');
-  background-position: bottom;
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: contain;
+
   @media screen and (min-width: 768px) {
     padding-top: 20px;
     padding-bottom: 13px;
@@ -18,14 +18,12 @@
     background-image: url('../images/tablet/header-tablet-points.svg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 
   @media screen and (min-width: 1200px) {
     background-image: url('../images/desktop/header-desktop-points.svg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
     padding-top: 0;
     padding-bottom: 65px;
   }
