@@ -89,6 +89,14 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+  transition: stroke var(--animation);
+  fill: currentColor;
+
+  stroke: var(--white-color);
+  &:hover,
+  &:focus {
+    stroke: var(--yellow-default-color);
+  }
 }
 .header__btn {
   display: none;
