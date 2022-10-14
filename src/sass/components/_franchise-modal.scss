@@ -152,12 +152,14 @@
     height: 42px;
   }
 }
-
-.modal-input:valid {
+.modal-input:placeholder-shown {
+  border: 1px solid var(--main-green-color);
+}
+.modal-input:valid:not(:placeholder-shown) {
   border-color: var(--green-accent-color);
 }
 
-.modal-input:invalid {
+.modal-input:invalid:not(:placeholder-shown) {
   border-color: var(--red-color);
 }
 
@@ -217,7 +219,6 @@
     font-size: 14px;
   }
 }
-
 
 .is-hidden {
   visibility: hidden;
