@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -22,12 +22,12 @@
   @media screen and (min-width: 480px) {
     width: 568px;
     height: 668px;
-    top: 10px;
-    transform: translate(-50%);
+    // top: 10px;
+    // transform: translate(-50%);
   }
-  @media screen and (max-width: 767px) {
-    overflow: scroll;
-  }
+  // @media screen and (max-width: 767px) {
+  //   overflow: scroll;
+  // }
 }
 
 .franchise-modal.is-hidden {
@@ -51,6 +51,13 @@
 
   border: none;
   background-color: var(--main-text-color);
+
+  fill: currentColor;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--yellow-default-color);
+  }
 }
 
 .franchise-close-icon {
@@ -205,7 +212,7 @@
   border-radius: 10px;
 
   cursor: pointer;
-
+  transition: color var(--animation), background-color var(--animation);
   &:hover {
     background-color: var(--green-accent-color);
   }
